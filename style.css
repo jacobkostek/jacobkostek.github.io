@@ -1,0 +1,53 @@
+h1{
+    color:white;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: rgb(249, 152, 152);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px;
+}
+  
+td {
+    width: 33.33%;
+    text-align: center;
+}
+
+footer{
+    color: white;
+    font-size: large;
+    text-align: center;
+    background-color: #cb4335;
+    padding: 30px;
+}
+
+p{
+    text-align: center;
+}
+
+
+.duzy{
+    font-size: larger;
+}
+
+.srodek{
+    text-align: center;
+    padding:2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fc3e15;
+}
+.zdjecie-kontener {
+    width: 50%;
+    margin: auto;
+}
+.zdjecie-kontener img {
+    margin: 0;
+    padding: 0;
+}
