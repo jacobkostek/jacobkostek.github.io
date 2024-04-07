@@ -2,34 +2,66 @@
 <html lang="pl">
 
 <head>
-<title>To jest druga strona</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+	<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Piękna strona</title>
 </head>
-    <h1 class="srodek">Dzień dobry</h1>
-    <table>
-        <thead>
-          <tr>
-            <td class="duzy"><a href="https://jacobkostek.github.io">GŁÓWNA</a><br></td>
-            <td class="duzy"><a href="https://jacobkostek.github.io">KONTAKT</a></td>
-            <td class="duzy"><a href="https://jacobkostek.github.io">O AUTORZE</a></td>
-          </tr>
-        </thead>
-        </table>
-    
-    
-    <div class="zdjecie-kontener">
-        <img src="pizza.jpg" alt="Tu jest zdjecie pizzy">
+
+<body>
+
+    <div id="mainn">
+
+        <header>
+            <h1>
+                Strona poświęcona kotom
+            </h1>
+            <h1>
+                U nas tylko słodkie kotki
+                i kocury
+            </h1>
+        </header>
+        
+        <nav>
+            <ul>
+				<li>
+					<a href="#" onclick=
+					"changeContent('glowna')">
+						Strona Główna
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick=
+					"changeContent('galeria')">
+						Galeria
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick=
+					"changeContent('ciekawostki')">
+						Losowa Ciekawostka
+					</a>
+				</li>
+			</ul>
+        </nav>
+        <main>
+			<div id="content">
+
+				<h2>Witam na stronie poświęconej kotom</h2>
+				<h3>
+					Nasza strona jest poświęcona najukochańszym zwierzętom na świecie - kotom.
+                    Te zwierzęta towarzyszą nam na codzień i uważamy, że dedykowana strona zgodna z RWD + SPA im się należy.
+				</h3>
+			</div>
+		</main>
+
     </div>
-    <p id="wieksze">Zasmakuj Naszej Wyjątkowej Pizzy</p>
-    <p id="mniejsze">Odkryj świeże składniki, tradycyjny smak i szybką dostawę! Zamów teraz i delektuj się doskonałym smakiem już dziś!</p>
-    <footer>
-        Autor: Jakub Kostyra, 210879
-    </footer>
 
+
+
+
+
+    <script src="script.js"></script>
 </body>
-
-
-
-
 </html>
