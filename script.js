@@ -1,6 +1,6 @@
-function changeContent(page) {
+function zmienStrone(strona) {
     var contentDiv = document.getElementById('content');
-    switch (page) {
+    switch (strona) {
         case 'glowna':
             contentDiv.innerHTML = `
             <div id="content">
@@ -24,23 +24,31 @@ function changeContent(page) {
             `;
             break;
         case 'ciekawostki':
-            var catFacts = [
-                "Koty mają ponad 100 różnych dźwięków w porównaniu do psów, które mają tylko około 10.",
-                "Koty potrafią skakać nawet sześć razy długości swojego ciała.",
-                "Koty mają niezwykle elastyczne kości. Mają aż 230 kości, a człowiek tylko 206.",
-                "Koty są zwierzętami nocnymi. Mają w oku warstwę komórek światłoczułych zwanych komórkami czopkowymi, co pozwala im widzieć w ciemnościach.",
-                "Koty lubią zabawy, ponieważ ćwiczą w ten sposób umiejętności myśliwskie.",
-                "Koty potrafią przyjąć pozycję spania, w której są całkowicie zrelaksowane, ale w każdej chwili mogą natychmiast zareagować i być gotowe do działania.",
-                "Koty potrafią mrugać na różne sposoby. Mruganie to nie tylko sposób na oczyszczenie oczu, ale także sposób na wyrażenie zadowolenia lub zrozumienia innego kota.",
-                "Koty są bardzo czystymi zwierzętami. Spędzają dużo czasu na pielęgnacji swojego futra.",
-                "Koty mają unikalne odciski łap, tak jak ludzie mają unikalne odciski palców.",
-                "Wiele kotów nie toleruje mleka. Mają one trudności z trawieniem laktozy, co może prowadzić do problemów żołądkowych."
-            ];
-            var randomFactIndex = Math.floor(Math.random() * catFacts.length);
-            var randomFact = catFacts[randomFactIndex];
+            var faktykoty = [
+                "Koty posiadają unikalną zdolność do czyszczenia swojego futra poprzez obgryzanie i szczotkowanie go językiem, co pomaga im w utrzymaniu higieny.",
+                "Koty potrafią wydawać dźwięki niewidoczne dla ludzkiego ucha, co pozwala im na komunikację na odległość z innymi kotami.",
+                "Koty są niesamowicie zręczne i potrafią łapać zdobycz nawet w locie dzięki swoim szybkim i precyzyjnym ruchom.",
+                "Koty mają naturalną skłonność do drapania, co pozwala im na czyszczenie pazurów oraz na oznaczanie swojego terytorium.",
+                "Niektóre koty posiadają unikalne umiejętności, takie jak otwieranie drzwi czy korzystanie z toalety, co sprawia, że są one bardzo inteligentnymi zwierzętami domowymi.",
+                "Koty mają niezwykłe zdolności słuchowe, które pozwalają im na wykrywanie nawet najdelikatniejszych dźwięków, włączając w to nawet ultradźwięki.",
+                "Koty są znanymi leniuszkami i potrafią spać nawet do 16 godzin dziennie, co pomaga im w regeneracji sił oraz utrzymaniu zdrowia i witalności.",
+                "Koty posiadają bardzo wyrafinowany zmysł równowagi, co pozwala im na wykonywanie skomplikowanych akrobacji oraz unikanie niebezpieczeństw.",
+                "Koty mają wyjątkowe zdolności terapeutyczne i mogą być wykorzystywane do leczenia różnych dolegliwości psychicznych oraz fizycznych u ludzi.",
+                "Niektóre koty mogą nauczyć się korzystać z toalety, co pozwala na utrzymanie czystości w domu i ułatwia opiekę nad zwierzęciem.",
+                "Koty potrafią zyskać kontrolę nad swoim terytorium i są znane ze swojego silnego instynktu obronnego, co sprawia, że są doskonałymi strażnikami.",
+                "Koty posiadają unikalne wzorce zachowań, które mogą być związane z ich rasą, wiekiem oraz historią życia.",
+                "Koty są bardzo elastycznymi zwierzętami i mogą dostosować swoje ciało do różnych sytuacji, co sprawia, że są bardzo zwinne i zręczne.",
+                "Niektóre koty mogą być nauczane chodzenia na smyczy oraz wykonywania różnych sztuczek, co pozwala na wspólne spędzanie czasu na świeżym powietrzu.",
+                "Koty są znane z tego, że potrafią odnaleźć drogę do domu z ogromnych odległości, co sprawia, że są bardzo wytrzymałymi i inteligentnymi zwierzętami.",
+                "Koty są związane z różnymi kulturami i religiami na całym świecie, co sprawia, że są uważane za symbole szczęścia, mądrości oraz ochrony.",
+                "Koty mają unikalne zdolności związane z postrzeganiem światła oraz kolorów, co pozwala im na lepsze orientowanie się w otoczeniu oraz na zdobywanie pożywienia.",
+                        ];
+            
+            var indexx = Math.floor(Math.random() * faktykoty.length);
+            var fakt = faktykoty[indexx];
             contentDiv.innerHTML = `
                 <h2>Losowa ciekawostka o kotach</h2>
-                <p>${randomFact}</p>
+                <p>${fakt}</p>
             `;
             break;
  
